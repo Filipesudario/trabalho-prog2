@@ -21,7 +21,7 @@ public class Cliente implements ICliente {
 
     @Override
     public double darLance(double precoMinimo) {
-        // Para simplificar: cada cliente dá um lance aleatório acima do preço mínimo
+      
         Random rand = new Random();
         lance = precoMinimo + (rand.nextInt(200) + 1);
         return lance;
@@ -35,4 +35,5 @@ public class Cliente implements ICliente {
     public double getLance() {
         return lance;
     }
+
 }
